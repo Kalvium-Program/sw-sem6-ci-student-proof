@@ -2,7 +2,7 @@ name: CI
 
 on:
   push:
-    branches: [master]
+    branches: [main]
   pull_request:
 
 permissions:
@@ -19,5 +19,5 @@ jobs:
         run: node --version
 
       - name: Run tests
-        working-directory: events-api
+      working-directory: events-api
         run: npm test
